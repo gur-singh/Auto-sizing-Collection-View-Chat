@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB16B30C2980F56A002EBE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16B30B2980F56A002EBE2C /* AppDelegate.swift */; };
+		AB16B30E2980F56A002EBE2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16B30D2980F56A002EBE2C /* SceneDelegate.swift */; };
+		AB16B3102980F56A002EBE2C /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16B30F2980F56A002EBE2C /* SocketManager.swift */; };
+		AB16B3132980F56A002EBE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB16B3112980F56A002EBE2C /* Main.storyboard */; };
+		AB16B3152980F56C002EBE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB16B3142980F56C002EBE2C /* Assets.xcassets */; };
+		AB16B3182980F56C002EBE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB16B3162980F56C002EBE2C /* LaunchScreen.storyboard */; };
+		AB47F29329815E4400F70554 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = AB47F29229815E4400F70554 /* SocketIO */; };
+		AB47F2952982A79D00F70554 /* SocketConnectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F2942982A79D00F70554 /* SocketConnectVC.swift */; };
+		AB47F29729837E4400F70554 /* MessageViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F29629837E4400F70554 /* MessageViewModal.swift */; };
+		AB47F29929839A9F00F70554 /* MessageModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F29829839A9F00F70554 /* MessageModal.swift */; };
+		AB47F29B2983A79200F70554 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F29A2983A79200F70554 /* InitialVC.swift */; };
+		AB47F29E298442C800F70554 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AB47F29D298442C800F70554 /* IQKeyboardManagerSwift */; };
+		AB47F2A12985123F00F70554 /* LeftChatBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F29F2985123F00F70554 /* LeftChatBubbleCell.swift */; };
+		AB47F2A22985123F00F70554 /* LeftChatBubbleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB47F2A02985123F00F70554 /* LeftChatBubbleCell.xib */; };
+		AB47F2A52985603500F70554 /* RightChatBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F2A32985603400F70554 /* RightChatBubbleCell.swift */; };
+		AB47F2A62985606900F70554 /* RightChatBubbleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB47F2A42985603500F70554 /* RightChatBubbleCell.xib */; };
+		AB47F2A82986DDA900F70554 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F2A72986DDA900F70554 /* Extensions.swift */; };
+		AB47F2AA2986DDD400F70554 /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F2A92986DDD400F70554 /* Contants.swift */; };
+		AB47F2B22986DEA800F70554 /* ChatSocketHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F2B12986DEA800F70554 /* ChatSocketHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB16B3082980F56A002EBE2C /* Whatsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whatsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB16B30B2980F56A002EBE2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB16B30D2980F56A002EBE2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AB16B30F2980F56A002EBE2C /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
+		AB16B3122980F56A002EBE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB16B3142980F56C002EBE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB16B3172980F56C002EBE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB16B3192980F56C002EBE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB47F2942982A79D00F70554 /* SocketConnectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketConnectVC.swift; sourceTree = "<group>"; };
+		AB47F29629837E4400F70554 /* MessageViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModal.swift; sourceTree = "<group>"; };
+		AB47F29829839A9F00F70554 /* MessageModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModal.swift; sourceTree = "<group>"; };
+		AB47F29A2983A79200F70554 /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
+		AB47F29F2985123F00F70554 /* LeftChatBubbleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftChatBubbleCell.swift; sourceTree = "<group>"; };
+		AB47F2A02985123F00F70554 /* LeftChatBubbleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftChatBubbleCell.xib; sourceTree = "<group>"; };
+		AB47F2A32985603400F70554 /* RightChatBubbleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightChatBubbleCell.swift; sourceTree = "<group>"; };
+		AB47F2A42985603500F70554 /* RightChatBubbleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightChatBubbleCell.xib; sourceTree = "<group>"; };
+		AB47F2A72986DDA900F70554 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AB47F2A92986DDD400F70554 /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
+		AB47F2B12986DEA800F70554 /* ChatSocketHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSocketHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB16B3052980F56A002EBE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB47F29329815E4400F70554 /* SocketIO in Frameworks */,
+				AB47F29E298442C800F70554 /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB16B2FF2980F56A002EBE2C = {
+			isa = PBXGroup;
+			children = (
+				AB16B30A2980F56A002EBE2C /* Whatsapp */,
+				AB16B3092980F56A002EBE2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB16B3092980F56A002EBE2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB16B3082980F56A002EBE2C /* Whatsapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB16B30A2980F56A002EBE2C /* Whatsapp */ = {
+			isa = PBXGroup;
+			children = (
+				AB16B30B2980F56A002EBE2C /* AppDelegate.swift */,
+				AB16B30D2980F56A002EBE2C /* SceneDelegate.swift */,
+				AB47F2B02986DE9400F70554 /* Socket */,
+				AB47F2AF2986DE4E00F70554 /* Common */,
+				AB47F2AE2986DE2C00F70554 /* Controllers */,
+				AB47F2AD2986DE1500F70554 /* ViewModal */,
+				AB47F2AC2986DDFE00F70554 /* Modal */,
+				AB47F2AB2986DDE900F70554 /* Views */,
+				AB16B3112980F56A002EBE2C /* Main.storyboard */,
+				AB16B3142980F56C002EBE2C /* Assets.xcassets */,
+				AB16B3162980F56C002EBE2C /* LaunchScreen.storyboard */,
+				AB16B3192980F56C002EBE2C /* Info.plist */,
+			);
+			path = Whatsapp;
+			sourceTree = "<group>";
+		};
+		AB47F2AB2986DDE900F70554 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB47F2A32985603400F70554 /* RightChatBubbleCell.swift */,
+				AB47F2A42985603500F70554 /* RightChatBubbleCell.xib */,
+				AB47F2A02985123F00F70554 /* LeftChatBubbleCell.xib */,
+				AB47F29F2985123F00F70554 /* LeftChatBubbleCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB47F2AC2986DDFE00F70554 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				AB47F29829839A9F00F70554 /* MessageModal.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		AB47F2AD2986DE1500F70554 /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				AB47F29629837E4400F70554 /* MessageViewModal.swift */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
+		AB47F2AE2986DE2C00F70554 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB47F29A2983A79200F70554 /* InitialVC.swift */,
+				AB47F2942982A79D00F70554 /* SocketConnectVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AB47F2AF2986DE4E00F70554 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AB47F2A92986DDD400F70554 /* Contants.swift */,
+				AB47F2A72986DDA900F70554 /* Extensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AB47F2B02986DE9400F70554 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				AB16B30F2980F56A002EBE2C /* SocketManager.swift */,
+				AB47F2B12986DEA800F70554 /* ChatSocketHelper.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB16B3072980F56A002EBE2C /* Whatsapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB16B31C2980F56C002EBE2C /* Build configuration list for PBXNativeTarget "Whatsapp" */;
+			buildPhases = (
+				AB16B3042980F56A002EBE2C /* Sources */,
+				AB16B3052980F56A002EBE2C /* Frameworks */,
+				AB16B3062980F56A002EBE2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Whatsapp;
+			packageProductDependencies = (
+				AB47F29229815E4400F70554 /* SocketIO */,
+				AB47F29D298442C800F70554 /* IQKeyboardManagerSwift */,
+			);
+			productName = Whatsapp;
+			productReference = AB16B3082980F56A002EBE2C /* Whatsapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB16B3002980F56A002EBE2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					AB16B3072980F56A002EBE2C = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = AB16B3032980F56A002EBE2C /* Build configuration list for PBXProject "Whatsapp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB16B2FF2980F56A002EBE2C;
+			packageReferences = (
+				AB47F29129815E4400F70554 /* XCRemoteSwiftPackageReference "socket" */,
+				AB47F29C298442C800F70554 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = AB16B3092980F56A002EBE2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB16B3072980F56A002EBE2C /* Whatsapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB16B3062980F56A002EBE2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB16B3182980F56C002EBE2C /* LaunchScreen.storyboard in Resources */,
+				AB16B3152980F56C002EBE2C /* Assets.xcassets in Resources */,
+				AB16B3132980F56A002EBE2C /* Main.storyboard in Resources */,
+				AB47F2A22985123F00F70554 /* LeftChatBubbleCell.xib in Resources */,
+				AB47F2A62985606900F70554 /* RightChatBubbleCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB16B3042980F56A002EBE2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB47F2952982A79D00F70554 /* SocketConnectVC.swift in Sources */,
+				AB16B3102980F56A002EBE2C /* SocketManager.swift in Sources */,
+				AB47F29729837E4400F70554 /* MessageViewModal.swift in Sources */,
+				AB47F2A12985123F00F70554 /* LeftChatBubbleCell.swift in Sources */,
+				AB16B30C2980F56A002EBE2C /* AppDelegate.swift in Sources */,
+				AB47F2A82986DDA900F70554 /* Extensions.swift in Sources */,
+				AB47F2B22986DEA800F70554 /* ChatSocketHelper.swift in Sources */,
+				AB47F29929839A9F00F70554 /* MessageModal.swift in Sources */,
+				AB47F29B2983A79200F70554 /* InitialVC.swift in Sources */,
+				AB16B30E2980F56A002EBE2C /* SceneDelegate.swift in Sources */,
+				AB47F2AA2986DDD400F70554 /* Contants.swift in Sources */,
+				AB47F2A52985603500F70554 /* RightChatBubbleCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB16B3112980F56A002EBE2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB16B3122980F56A002EBE2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB16B3162980F56C002EBE2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB16B3172980F56C002EBE2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB16B31A2980F56C002EBE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB16B31B2980F56C002EBE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB16B31D2980F56C002EBE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58Y4XR4RTT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Whatsapp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Whatsapp;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.futureComp.Whatsapp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB16B31E2980F56C002EBE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58Y4XR4RTT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Whatsapp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Whatsapp;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.futureComp.Whatsapp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB16B3032980F56A002EBE2C /* Build configuration list for PBXProject "Whatsapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB16B31A2980F56C002EBE2C /* Debug */,
+				AB16B31B2980F56C002EBE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB16B31C2980F56C002EBE2C /* Build configuration list for PBXNativeTarget "Whatsapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB16B31D2980F56C002EBE2C /* Debug */,
+				AB16B31E2980F56C002EBE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB47F29129815E4400F70554 /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		AB47F29C298442C800F70554 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB47F29229815E4400F70554 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB47F29129815E4400F70554 /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
+		AB47F29D298442C800F70554 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB47F29C298442C800F70554 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AB16B3002980F56A002EBE2C /* Project object */;
+}

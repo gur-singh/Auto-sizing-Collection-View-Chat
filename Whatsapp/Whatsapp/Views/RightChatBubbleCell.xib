@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RightChatBubbleCell" customModule="Whatsapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="62"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="62"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="am1-KK-iXf">
+                        <rect key="frame" x="62" y="5" width="276" height="52"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is  df d dfd df df d fdf dfd dfd dfd df df df dd d" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMc-OD-19S">
+                                <rect key="frame" x="10" y="5" width="238.5" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="p8V-QJ-MXX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sFont">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="05:32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZP4-Vn-UF6" customClass="CustomLabel" customModule="Whatsapp" customModuleProvider="target">
+                                <rect key="frame" x="236" y="34" width="35" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="Egd-ZQ-sYQ"/>
+                                    <constraint firstAttribute="height" constant="14" id="YkI-ui-a1a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="lightBubbleColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZP4-Vn-UF6" secondAttribute="trailing" constant="10" id="Ejp-Ma-xYz"/>
+                            <constraint firstAttribute="bottom" secondItem="ZP4-Vn-UF6" secondAttribute="bottom" constant="4" id="HIh-AM-Xdc"/>
+                            <constraint firstAttribute="bottom" secondItem="vMc-OD-19S" secondAttribute="bottom" constant="5" id="Lqj-ZS-M8T"/>
+                            <constraint firstItem="ZP4-Vn-UF6" firstAttribute="leading" relation="lessThanOrEqual" secondItem="vMc-OD-19S" secondAttribute="trailing" constant="2.5" id="SQn-dA-66W"/>
+                            <constraint firstItem="vMc-OD-19S" firstAttribute="top" secondItem="am1-KK-iXf" secondAttribute="top" constant="5" id="Xhv-4t-lyJ"/>
+                            <constraint firstItem="vMc-OD-19S" firstAttribute="leading" secondItem="am1-KK-iXf" secondAttribute="leading" constant="10" id="bZW-1e-eFG"/>
+                            <constraint firstItem="ZP4-Vn-UF6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vMc-OD-19S" secondAttribute="trailing" constant="-19.5" id="ifL-6i-hbR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="am1-KK-iXf" firstAttribute="width" relation="lessThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.8" id="7KC-Qf-CP5"/>
+                <constraint firstAttribute="trailing" secondItem="am1-KK-iXf" secondAttribute="trailing" constant="10" id="7U3-kg-K9Y"/>
+                <constraint firstAttribute="bottom" secondItem="am1-KK-iXf" secondAttribute="bottom" constant="5" id="P50-YX-o11"/>
+                <constraint firstItem="am1-KK-iXf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Qtf-ly-j0e"/>
+            </constraints>
+            <size key="customSize" width="352" height="62"/>
+            <connections>
+                <outlet property="containerView" destination="am1-KK-iXf" id="qVl-72-SCc"/>
+                <outlet property="messageTitle" destination="vMc-OD-19S" id="Lnz-6O-IPo"/>
+                <outlet property="rightMarginConst" destination="7U3-kg-K9Y" id="GyC-bT-qnh"/>
+                <outlet property="timeLabel" destination="ZP4-Vn-UF6" id="kiz-r0-7nw"/>
+            </connections>
+            <point key="canvasLocation" x="317.39130434782612" y="121.875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="lightBubbleColor">
+            <color red="0.87058823529411766" green="0.96470588235294119" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
